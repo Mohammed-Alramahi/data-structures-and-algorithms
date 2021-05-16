@@ -147,7 +147,6 @@ Iterate over the array using forEach to determine the output based on several ru
   - If the number is divisible by 5, add the word "Buzz" to the output array.
   - If the number is divisible by both 3 and 5, add the phrase "Fizz Buzz" to the output array.
   - Otherwise, add the number to the output array.
-    expect(fizzbuzz(inputs)).toStrictEqual([1, 2, 'Fizz', 4, 'Buzz', 'Fizz', 7, 8, 'Fizz', 'Buzz', 11, 'Fizz', 13, 14, 'Fizz Buzz', 16]);
 Return the resulting output array.
 ------------------------------------------------------------------------------------------------ */
 
