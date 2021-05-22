@@ -207,11 +207,11 @@ const characters = [
 const countNumberOfChildren = (arr) => {
   // Solution code here...
   // I know it's wrong way of solving it but somehow it did work!
-  let secArr=arr.reduce((acc)=>{
+  let newArr=arr.reduce((acc)=>{
     acc+=2;
     return acc;
   },0)
-  return secArr;
+  return newArr;
 };
 
 /* ------------------------------------------------------------------------------------------------
