@@ -24,15 +24,11 @@ Returns: ['dyoll', 'eimaj'];
 
 const getNames = (arr) => {
   // Solution code here...
-  let str=[];
-  let secStr=[];
-  let newArr=arr.map((item)=>{
-    return item.name;
- })
-  newArr.forEach((item)=>{
-  str.push(item.split(""));
+  // I got help with this challenge from google ^^
+  let newArr =arr.map(item=>{
+    return item.name.split('').reverse().join('');
   });
-  return str;
+  return newArr;
 };
 
 /* ------------------------------------------------------------------------------------------------
