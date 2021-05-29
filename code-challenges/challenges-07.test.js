@@ -47,6 +47,7 @@ const removeThree = (idx, arr) => {
   // Solution code here...
   arr.splice(idx, 3);
   return arr;
+
 };
 
 /* ------------------------------------------------------------------------------------------------
