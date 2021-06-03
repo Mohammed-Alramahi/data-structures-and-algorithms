@@ -23,6 +23,11 @@ For example, ['this is great :)', 'wow', 'whyyyyyy :(', ':)))))'] returns ['t', 
 
 const firstLetters = (arr) => {
   // Solution code here...
+  let newArr = arr.map(item => {
+    let tempArr = item.split('');
+    return tempArr[0];
+  })
+  return newArr;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -35,6 +40,14 @@ For example, ['this is great :)', 'wow', 'whyyyyyy :(', ':)))))'] returns ['this
 
 const findHappiness = (arr) => {
   // Solution code here...
+  let regex = /:\)/;
+  let newArr = [];
+  for (let i = 0; i < arr.length; i++) {
+    if (regex.test(arr[i])) {
+      newArr.push(arr[i]);
+    }
+  }
+  return newArr;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -47,6 +60,14 @@ For example, (123) 456-7890 returns 1234567890
 
 const standardizePhoneNumbers = (arr) => {
   // Solution code here...
+  let regex = /[0-9]+/g;
+  let newArr;
+  let lastArr = [];
+  for (let i = 0; i < arr.length; i++) {
+    newArr = arr[i].match(regex);
+    lastArr.push(newArr.join(''));
+  }
+  return lastArr;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -59,6 +80,15 @@ For example, 'abcdefg' returns 'bdf'
 
 const onlyOddChars = (str) => {
   // Solution code here...
+  let temp = str.split('');
+  let localArray1 = [];
+  for (let i = 0; i < temp.length; i++) {
+    if (i % 2 !== 0) {
+      localArray1.push(temp[i]);
+    }
+  }
+  let localArray = localArray1.join('');
+  return localArray;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -69,6 +99,16 @@ Write a function named allHappy that takes in an array of strings and returns a 
 
 const allHappy = (arr) => {
   // Solution code here...
+  let regex = /:\)/;
+  let finalSay = true;
+  arr.forEach(item => {
+    let temp = regex.test(item);
+    if (temp === false) {
+      finalSay = false;
+    }
+  });
+  console.log(finalSay);
+  return finalSay;
 };
 
 /* ------------------------------------------------------------------------------------------------
