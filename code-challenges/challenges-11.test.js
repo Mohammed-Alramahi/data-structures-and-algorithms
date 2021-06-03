@@ -39,6 +39,16 @@ For example, count(5, [[1, 3, 5, 7, 9], [5, 5, 5], [1, 2, 3]]) returns 4.
 
 const count = (target, input) => {
   // Solution code here...
+  let newArr =[];
+  input.map((i) => {
+    i.map((j) => {
+      if (j === target) {
+        newArr.push(1);
+      }
+    });
+  });
+  return newArr.length;
+  
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -53,6 +63,13 @@ For example, [[1, 2, 3, 4, 5], [6, 7, 2, 4, 5, 7], [9, 2, 3, 6,]] returns 66.
 
 const totalSum = (input) => {
   // Solution code here...
+  let total = 0;
+  input.map((i) => {
+    i.map((j) => {
+      total = j + total;
+    });
+  });
+  return total;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -69,6 +86,12 @@ For example, [ [0,2,5,4], [2,4,10], [] ] should return [ [1, 32], [1024], [] ].
 
 const divisibleByFiveTwoToThePower = (input) => {
   // Solution code here...
+  let newArr = [];
+  for (let i=0; i < input.length; i++) {
+    let inputArray = input[i];
+    newArr.push(inputArray.filter(num => ((num % 5 === 0) && typeof (num) === 'number')).map(num => Math.pow(2, num)));
+  }
+  return newArr;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -135,6 +158,8 @@ let starWarsData = [{
 
 let findMaleAndFemale = (data) => {
   // Solution code here...
+  let result = data.filter((char) => char.gender === 'male' || char.gender === 'female').map((character => character.name)).join(' and ');
+  return result;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -145,6 +170,8 @@ Write a function named findShortest that, given the Star Wars data from Challeng
 
 let findShortest = (data) => {
   // Solution code here...
+  let answer = data.filter(character => character.height).reduce((a,b) => (b.height > a.height ? b : a));
+  return answer.name;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -182,7 +209,7 @@ describe('Testing challenge 3', () => {
   test('It should add all the numbers in the arrays', () => {
     const nums = [[1, 2, 3, 4, 5], [6, 7, 2, 4, 5, 7], [9, 2, 3, 6,]];
 
-    expect(totalSum(nums)).toStrictEqual(66);
+    expect(total(nums)).toStrictEqual(66);
   });
 });
 
