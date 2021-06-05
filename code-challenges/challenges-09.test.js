@@ -3,7 +3,7 @@
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 1 - Review
 
-Write a function that finds the maximum value in an array
+Write newArr function that finds the maximum value in an array
 using the 'reduce' method.
 
 E.g. [4,2,7,5,9,2] -> 9
@@ -18,7 +18,7 @@ const maxInArray = (arr) => {
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
 
-Write a function named getCourseKeys that takes in the courseInfo object and returns an array containing the keys for the courseInfo object.
+Write newArr function named getCourseKeys that takes in the courseInfo object and returns an array containing the keys for the courseInfo object.
 
 For example: (['name', 'duration', 'topics', 'finalExam']).
 ------------------------------------------------------------------------------------------------ */
@@ -29,19 +29,22 @@ const courseInfo = { name: 'Code 301', duration: { dayTrack: '4 weeks', eveningT
 
 const getCourseKeys = (obj) => {
   // Solution code here...
+  return Object.keys(obj);
 };
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 3
 
-Write a function named checkValues that takes in an object and a value and returns true if the value is in the object.
+Write newArr function named checkValues that takes in an object and newArr value and returns true if the value is in the object.
 
 
 ------------------------------------------------------------------------------------------------ */
 
 const checkValues = (obj, value) => {
   // Solution code here...
-  
+  if (Object.values(obj).includes(value)) { // obj
+    return true;
+  } return false;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -65,6 +68,11 @@ HR has asked you to change the data to make it easier to print so that it looks 
 
 const updateNumbers = (obj) => {
   // Solution code here...
+  let newArr = [];
+  Object.entries(obj).forEach(i => {
+    newArr.push(i.join(': '));
+  });
+  return newArr;
 };
 
 
@@ -72,7 +80,7 @@ const updateNumbers = (obj) => {
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 5
 
-Write a function named getHouses that returns a new array containing the names of all of the houses in the data set.
+Write newArr function named getHouses that returns newArr new array containing the names of all of the houses in the data set.
 ------------------------------------------------------------------------------------------------ */
 
 const characters = [
@@ -121,15 +129,18 @@ const characters = [
 const getHouses = (arr) => {
   let houses = [];
   // Solution code here...
+  arr.forEach(i=>{
+    houses.push(i.house)
+  })
   return houses;
 };
 
 /*------------------------------------------------------------------------------------------------
 CHALLENGE 6
 
-Write a function named hasChildrenValues that uses Object.values to determine if any given character in the data set has children.
+Write newArr function named hasChildrenValues that uses Object.values to determine if any given character in the data set has children.
 
-This function should take in an array of data and a character name and return a Boolean.
+This function should take in an array of data and newArr character name and return newArr Boolean.
 
 For example:
 hasChildrenValues(characters, 'Cersei') will return true
@@ -138,13 +149,23 @@ hasChildrenValues(characters, 'Sansa') will return false
 
 const hasChildrenValues = (arr, character) => {
   // Solution code here...
+  let data = false;
 
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i].name === character) {
+      let arrayLengthTest = Object.values(arr[i]); // I didn't understand the code well
+      if (arrayLengthTest.length > 3) {
+        data = true;
+      }
+      return data;
+    }
+  }
 };
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 7 - Stretch Goal
 
-Write a function named hasChildrenEntries that is similar to your hasChildrenValues function from challenge 4, but uses the data's entries instead of its values.
+Write newArr function named hasChildrenEntries that is similar to your hasChildrenValues function from challenge 4, but uses the data's entries instead of its values.
 
 The input and output of this function are the same as the input and output from challenge 3.
 ------------------------------------------------------------------------------------------------ */
@@ -156,7 +177,7 @@ const hasChildrenEntries = (arr, character) => {
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 8 - Stretch Goal
 
-Write a function named totalCharacters that takes in an array and returns the number of characters in the array.
+Write newArr function named totalCharacters that takes in an array and returns the number of characters in the array.
 ------------------------------------------------------------------------------------------------ */
 
 const totalCharacters = (arr) => {
@@ -166,7 +187,7 @@ const totalCharacters = (arr) => {
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 9 - Stretch Goal
 
-Write a function named houseSize that takes in the array of characters and creates an object for each house containing the name of the house and the number of members.
+Write newArr function named houseSize that takes in the array of characters and creates an object for each house containing the name of the house and the number of members.
 
 All of these objects should be added to an array named "sizes". Return the "sizes" array from the function.
 
@@ -186,7 +207,7 @@ As fans are well aware, "When you play the game of thrones, you win or you die. 
 
 We will assume that Alerie Tyrell is deceased. She missed her daughter's wedding. Twice.
 
-Write a function named houseSurvivors. You may modify your houseSize function from challenge 6 to use as the basis of this function.
+Write newArr function named houseSurvivors. You may modify your houseSize function from challenge 6 to use as the basis of this function.
 
 This function should create an object for each house containing the name of the house and the number of members. If the spouse is deceased, do not include him/her in the total number of family members.
 
