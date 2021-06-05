@@ -28,6 +28,11 @@ return: 23
 ------------------------------------------------------------------------------------------------ */
 const findMax = (matrix) => {
   // Solution code here...
+  let max = matrix.map(i => i.reduce((a, b) => b > a ? b : a));
+
+  let res = max.reduce((a, b) => b > a ? b : a);
+
+  return res;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -46,6 +51,11 @@ return: 35
 ------------------------------------------------------------------------------------------------ */
 const totalSum = (matrix) => {
   // Solution code here...
+  let max = matrix.map(i => i.reduce((a, b) => a+b,0));
+
+  let res = max.reduce((a, b) => a+b,0);
+
+  return res;
 };
 
 
@@ -73,7 +83,15 @@ const cookieStores = [firstPike, seaTac, seattleCenter, capHill, alkiBeach];
 
 const grandTotal = (stores) => {
   // Solution code here...
-
+  const hourlySum = [];
+  for (let i = 0; i < hoursOpen.length; i++) {
+    let total = 0;
+    for (let j = 0; j < stores.length; j++) {
+      total += stores[j][i];
+    }
+    hourlySum.push(total);
+  }
+  return hourlySum;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -88,6 +106,11 @@ Write a function named salesData that uses forEach to iterate over the hourlySal
 
 const salesData = (hours, data) => {
   // Solution code here...
+  const newArr = [];
+  data.forEach((total, index) =>
+  newArr.push({ sales: `${total} cookies`, time: `${hours[index]}` })
+  );
+  return newArr;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -113,6 +136,8 @@ const errands = [
 
 const howManyTreats = (arr) => {
   // Solution code here...
+  let x = arr[2];
+  return x.items[1].quantity;
 };
 
 /* ------------------------------------------------------------------------------------------------
