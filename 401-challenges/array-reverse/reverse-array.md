@@ -4,7 +4,7 @@ The function recieves an array then it reverse the array elements using backward
 
 ## Whiteboard Process
 
-![reverse_array](https://github.com/Mohammed-Alramahi/data-structures-and-algorithms/401-challenges/reverseArray/reverse-array.png)
+![reverse_array](https://github.com/Mohammed-Alramahi/data-structures-and-algorithms/blob/master/401-challenges/array-reverse/reverse-array.png)
 
 ## Approach & Efficiency
 
