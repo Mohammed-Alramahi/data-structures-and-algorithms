@@ -8,4 +8,4 @@ The function recieves an sorted array and a number and then it will insert it in
 
 ## Approach & Efficiency
 
-I took the approach of taking the middle index then using loop over the array with a condition that push numbers from the first array as well as the given number into the new array at proper index.
+I started out by whiteboarding the problem domain and then planned each step of my algorithm. Then I wrote some tests and then wrote code that passed my tests and matched my algorithm.
