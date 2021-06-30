@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1624922567140" clover="3.2.0">
-  <project timestamp="1624922567140" name="All files">
-    <metrics statements="12" coveredstatements="12" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2" elements="14" coveredelements="14" complexity="0" loc="12" ncloc="12" packages="3" files="3" classes="3"/>
+<coverage generated="1625013826297" clover="3.2.0">
+  <project timestamp="1625013826297" name="All files">
+    <metrics statements="23" coveredstatements="23" conditionals="4" coveredconditionals="4" methods="3" coveredmethods="3" elements="30" coveredelements="30" complexity="0" loc="23" ncloc="23" packages="4" files="4" classes="4"/>
     <package name="401-challenges.array-shift">
       <metrics statements="8" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
       <file name="array-shift.js" path="/home/meltdown/asac/data-structures-and-algorithms/401-challenges/array-shift/array-shift.js">
@@ -14,6 +14,23 @@
         <line num="7" count="2" type="stmt"/>
         <line num="8" count="4" type="stmt"/>
         <line num="10" count="2" type="stmt"/>
+      </file>
+    </package>
+    <package name="401-challenges.arrayBinarySearch">
+      <metrics statements="11" coveredstatements="11" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
+      <file name="array-binary-search.js" path="/home/meltdown/asac/data-structures-and-algorithms/401-challenges/arrayBinarySearch/array-binary-search.js">
+        <metrics statements="11" coveredstatements="11" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="7" type="stmt"/>
+        <line num="3" count="7" type="stmt"/>
+        <line num="4" count="7" type="stmt"/>
+        <line num="5" count="16" type="stmt"/>
+        <line num="6" count="16" type="cond" truecount="2" falsecount="0"/>
+        <line num="7" count="5" type="stmt"/>
+        <line num="8" count="11" type="cond" truecount="2" falsecount="0"/>
+        <line num="9" count="7" type="stmt"/>
+        <line num="11" count="4" type="stmt"/>
+        <line num="14" count="2" type="stmt"/>
       </file>
     </package>
     <package name="javascript.code-challenges.reverse-ll">
