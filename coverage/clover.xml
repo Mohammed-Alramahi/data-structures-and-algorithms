@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1625250906516" clover="3.2.0">
-  <project timestamp="1625250906516" name="All files">
+<coverage generated="1625441751303" clover="3.2.0">
+  <project timestamp="1625441751303" name="All files">
     <metrics statements="56" coveredstatements="55" conditionals="15" coveredconditionals="14" methods="9" coveredmethods="9" elements="80" coveredelements="78" complexity="0" loc="56" ncloc="56" packages="5" files="6" classes="6"/>
     <package name="401-challenges.array-shift">
       <metrics statements="8" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
