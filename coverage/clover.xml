@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1625443819759" clover="3.2.0">
-  <project timestamp="1625443819759" name="All files">
-    <metrics statements="103" coveredstatements="100" conditionals="26" coveredconditionals="24" methods="17" coveredmethods="17" elements="146" coveredelements="141" complexity="0" loc="103" ncloc="103" packages="6" files="8" classes="8"/>
+<coverage generated="1625523419770" clover="3.2.0">
+  <project timestamp="1625523419770" name="All files">
+    <metrics statements="139" coveredstatements="126" conditionals="37" coveredconditionals="33" methods="23" coveredmethods="21" elements="199" coveredelements="180" complexity="0" loc="139" ncloc="139" packages="7" files="10" classes="10"/>
     <package name="401-challenges.array-shift">
       <metrics statements="8" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
       <file name="array-shift.js" path="/home/meltdown/asac/data-structures-and-algorithms/401-challenges/array-shift/array-shift.js">
@@ -125,6 +125,51 @@
         <line num="80" count="1" type="stmt"/>
       </file>
       <file name="node.js" path="/home/meltdown/asac/data-structures-and-algorithms/401-challenges/linked-list-insertions/node.js">
+        <metrics statements="3" coveredstatements="3" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
+        <line num="3" count="22" type="stmt"/>
+        <line num="4" count="22" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="401-challenges.linked-list-kth-from-end">
+      <metrics statements="36" coveredstatements="26" conditionals="11" coveredconditionals="9" methods="6" coveredmethods="4"/>
+      <file name="ll-kth-from-end.js" path="/home/meltdown/asac/data-structures-and-algorithms/401-challenges/linked-list-kth-from-end/ll-kth-from-end.js">
+        <metrics statements="33" coveredstatements="23" conditionals="10" coveredconditionals="8" methods="5" coveredmethods="3"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="4" count="5" type="stmt"/>
+        <line num="5" count="5" type="stmt"/>
+        <line num="8" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="9" count="0" type="stmt"/>
+        <line num="10" count="0" type="stmt"/>
+        <line num="15" count="17" type="stmt"/>
+        <line num="16" count="17" type="cond" truecount="2" falsecount="0"/>
+        <line num="17" count="5" type="stmt"/>
+        <line num="18" count="5" type="stmt"/>
+        <line num="20" count="12" type="stmt"/>
+        <line num="21" count="12" type="stmt"/>
+        <line num="22" count="18" type="stmt"/>
+        <line num="24" count="12" type="stmt"/>
+        <line num="25" count="12" type="stmt"/>
+        <line num="29" count="0" type="stmt"/>
+        <line num="30" count="0" type="stmt"/>
+        <line num="31" count="0" type="stmt"/>
+        <line num="32" count="0" type="stmt"/>
+        <line num="33" count="0" type="stmt"/>
+        <line num="35" count="0" type="stmt"/>
+        <line num="36" count="0" type="stmt"/>
+        <line num="39" count="6" type="stmt"/>
+        <line num="40" count="6" type="cond" truecount="2" falsecount="0"/>
+        <line num="41" count="1" type="stmt"/>
+        <line num="42" count="5" type="cond" truecount="2" falsecount="0"/>
+        <line num="43" count="1" type="stmt"/>
+        <line num="44" count="4" type="cond" truecount="2" falsecount="0"/>
+        <line num="45" count="2" type="stmt"/>
+        <line num="47" count="2" type="stmt"/>
+        <line num="48" count="3" type="stmt"/>
+        <line num="50" count="2" type="stmt"/>
+        <line num="54" count="1" type="stmt"/>
+      </file>
+      <file name="node.js" path="/home/meltdown/asac/data-structures-and-algorithms/401-challenges/linked-list-kth-from-end/node.js">
         <metrics statements="3" coveredstatements="3" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
         <line num="3" count="22" type="stmt"/>
         <line num="4" count="22" type="stmt"/>
