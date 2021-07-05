@@ -14,8 +14,13 @@ The challenge was the ability to implement our own linked list and append to it 
 ## API
 
 **insert**: inserting on the head of the linked list.
+
 **append**: appending over to the end of the linked list.
+
 **includes**: searching for a specific value and check if it's there.
+
 **toString**: to represent our linked list in a readable form as a Javascript object litterals.
+
 **insertBefore**: insert before a certain value.
+
 **insrtAfter**: insert after a certain value.
