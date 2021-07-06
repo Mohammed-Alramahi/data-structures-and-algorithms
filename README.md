@@ -12,9 +12,11 @@ Each day, you'll add one new file to this folder to do your work for the day's a
 
 ### 401 Data Structures, Code Challenges
 
-| Challenge     | link                                                                                                                                                           |
-| ------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Reverse Array | [Reverse array](https://github.com/Mohammed-Alramahi/data-structures-and-algorithms/blob/master/401-challenges/array-reverse/reverse-array.md)                 |
-| Array shift   | [Array shift](https://github.com/Mohammed-Alramahi/data-structures-and-algorithms/blob/master/401-challenges/array-shift/array-shift.md)                       |
-| Linked List   | [Linked List](https://github.com/Mohammed-Alramahi/data-structures-and-algorithms/blob/master/401-challenges/linked-list-insertions/linked-list-insertions.md) |
-| Linked List Kth| [Linked List](https://github.com/Mohammed-Alramahi/data-structures-and-algorithms/blob/master/401-challenges/linked-list-kth-from-end/ll-kth-from-end.md) |
+
+| Challenge       | link                                                                                                                                                               |
+| --------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Reverse Array   | [Reverse array](https://github.com/Mohammed-Alramahi/data-structures-and-algorithms/blob/master/401-challenges/array-reverse/reverse-array.md)                     |
+| Array shift     | [Array shift](https://github.com/Mohammed-Alramahi/data-structures-and-algorithms/blob/master/401-challenges/array-shift/array-shift.md)                           |
+| Linked List     | [Linked List](https://github.com/Mohammed-Alramahi/data-structures-and-algorithms/blob/master/401-challenges/linked-list-insertions/linked-list-insertions.md)     |
+| Linked List Zip | [Linked List Zip](https://github.com/Mohammed-Alramahi/data-structures-and-algorithms/blob/master/401-challenges/linked-list-insertions/linked-list-insertions.md) |
+
