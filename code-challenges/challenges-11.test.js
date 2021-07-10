@@ -195,7 +195,7 @@ Run your tests from the console: jest challenges-10.test.js
 
 ------------------------------------------------------------------------------------------------ */
 
-describe("Testing challenge 1", () => {
+xdescribe("Testing challenge 1", () => {
   test("It should return a list of key value pairs inside of li tags", () => {
     expect(transformToLis({ name: "bob", age: 32 })[0]).toStrictEqual(
       `<li>name: bob</li>`
@@ -207,7 +207,7 @@ describe("Testing challenge 1", () => {
   });
 });
 
-describe("Testing challenge 2", () => {
+xdescribe("Testing challenge 2", () => {
   test("It should return the number of times the input is in the nested arrays", () => {
     expect(
       count(5, [
@@ -251,7 +251,7 @@ xdescribe("Testing challenge 3", () => {
   });
 });
 
-describe("Testing challenge 4", () => {
+xdescribe("Testing challenge 4", () => {
   test("It should return numbers divisible by five, then raise two to the power of the resulting numbers", () => {
     expect(
       divisibleByFiveTwoToThePower([
@@ -282,7 +282,7 @@ describe("Testing challenge 4", () => {
   });
 });
 
-describe("Testing challenge 5", () => {
+xdescribe("Testing challenge 5", () => {
   test("It should return only characters that are male or female", () => {
     expect(findMaleAndFemale(starWarsData)).toStrictEqual(
       "Luke Skywalker and Darth Vader and Leia Organa"
@@ -297,7 +297,7 @@ describe("Testing challenge 5", () => {
   });
 });
 
-describe("Testing challenge 6", () => {
+xdescribe("Testing challenge 6", () => {
   test("It should return the name of the shortest character", () => {
     expect(findShortest(starWarsData)).toStrictEqual("R2-D2");
   });
