@@ -240,7 +240,7 @@ Run your tests from the console: jest challenge-14.test.js
  
 ------------------------------------------------------------------------------------------------ */
 
-describe("Testing challenge 1", () => {
+xdescribe("Testing challenge 1", () => {
   test("It should return a list of names", () => {
     const names = [
       "Mr. Brown",
@@ -263,7 +263,7 @@ describe("Testing challenge 1", () => {
   });
 });
 
-describe("Testing challenge 2", () => {
+xdescribe("Testing challenge 2", () => {
   test("It should convert each word to title case", () => {
     const words = ["apple", "banana", "MacGyver"];
     expect(toTitleCase(words)).toStrictEqual(["Apple", "Banana", "MacGyver"]);
@@ -272,7 +272,7 @@ describe("Testing challenge 2", () => {
   });
 });
 
-describe("Testing challenge 3", () => {
+xdescribe("Testing challenge 3", () => {
   test("It should return only characters that are bigger than Luke", () => {
     expect(biggerThanLuke(starWarsData)).toStrictEqual(
       "Darth Vader - Pex Kylar"
@@ -281,7 +281,7 @@ describe("Testing challenge 3", () => {
   });
 });
 
-describe("Testing challenge 4", () => {
+xdescribe("Testing challenge 4", () => {
   test("It should sort items by a price", () => {
     expect(
       sortBy("price", [
@@ -311,7 +311,7 @@ describe("Testing challenge 4", () => {
   });
 });
 
-describe("Testing challenge 5", () => {
+xdescribe("Testing challenge 5", () => {
   test("It should check if url is https", () => {
     expect(isSecure("http://www.insecure.com")).toBe(false);
     expect(isSecure("https://secure.com")).toBe(true);
@@ -319,7 +319,7 @@ describe("Testing challenge 5", () => {
   });
 });
 
-describe("Testing challenge 6", () => {
+xdescribe("Testing challenge 6", () => {
   test("It should return true if there are three in a row", () => {
     expect(
       detectTicTacToeWin([
