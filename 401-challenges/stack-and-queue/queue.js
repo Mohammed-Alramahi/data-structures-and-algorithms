@@ -7,7 +7,6 @@ class Queue {
   }
   enqueue(value) {
     let node = new Node(value);
-
     if (this.isEmpty()) {
       this.front = node;
       this.back = node;

@@ -1,5 +1,4 @@
 const Node = require("./node");
-//test
 class Stack {
   constructor() {
     this.top = null;
@@ -11,7 +10,12 @@ class Stack {
   }
   pop() {
     let tmp = this.top;
-    this.top = tmp.next ;
+    this.top = tmp.next;
+    tmp.next = null;
+    return tmp.value;
+  }
+  isEmpty() {
+    return !this.top ? true : false;
   }
 }
 module.exports = Stack;
