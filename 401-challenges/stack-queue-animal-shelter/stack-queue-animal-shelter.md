@@ -12,7 +12,7 @@ To Implement the Animal shelter using queues data stractures.
 
 ## Approach & Efficiency
 
-I took the approach of implementing the challenge using queues list as required.
+I took the approach of implementing the challenge using queues as required.
 
 for **big O:**
 
