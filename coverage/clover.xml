@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1626150071465" clover="3.2.0">
-  <project timestamp="1626150071465" name="All files">
-    <metrics statements="307" coveredstatements="266" conditionals="96" coveredconditionals="80" methods="62" coveredmethods="56" elements="465" coveredelements="402" complexity="0" loc="307" ncloc="307" packages="11" files="23" classes="23"/>
+<coverage generated="1626238233458" clover="3.2.0">
+  <project timestamp="1626238233458" name="All files">
+    <metrics statements="339" coveredstatements="297" conditionals="118" coveredconditionals="101" methods="69" coveredmethods="63" elements="526" coveredelements="461" complexity="0" loc="339" ncloc="339" packages="12" files="26" classes="26"/>
     <package name="401-challenges.array-shift">
       <metrics statements="8" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
       <file name="array-shift.js" path="/home/meltdown/asac/data-structures-and-algorithms/401-challenges/array-shift/array-shift.js">
@@ -356,6 +356,50 @@
         <line num="23" count="1" type="stmt"/>
         <line num="26" count="1" type="stmt"/>
         <line num="31" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="401-challenges.stack-queue-brackets">
+      <metrics statements="32" coveredstatements="31" conditionals="22" coveredconditionals="21" methods="7" coveredmethods="7"/>
+      <file name="node.js" path="/home/meltdown/asac/data-structures-and-algorithms/401-challenges/stack-queue-brackets/node.js">
+        <metrics statements="3" coveredstatements="3" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
+        <line num="3" count="18" type="stmt"/>
+        <line num="4" count="18" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+      </file>
+      <file name="stack.js" path="/home/meltdown/asac/data-structures-and-algorithms/401-challenges/stack-queue-brackets/stack.js">
+        <metrics statements="14" coveredstatements="13" conditionals="4" coveredconditionals="3" methods="5" coveredmethods="5"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="4" count="10" type="stmt"/>
+        <line num="8" count="18" type="stmt"/>
+        <line num="9" count="18" type="stmt"/>
+        <line num="10" count="18" type="stmt"/>
+        <line num="13" count="14" type="cond" truecount="1" falsecount="1"/>
+        <line num="14" count="0" type="stmt"/>
+        <line num="16" count="14" type="stmt"/>
+        <line num="17" count="14" type="stmt"/>
+        <line num="18" count="14" type="stmt"/>
+        <line num="19" count="14" type="stmt"/>
+        <line num="23" count="47" type="cond" truecount="2" falsecount="0"/>
+        <line num="26" count="16" type="stmt"/>
+        <line num="30" count="1" type="stmt"/>
+      </file>
+      <file name="validate.js" path="/home/meltdown/asac/data-structures-and-algorithms/401-challenges/stack-queue-brackets/validate.js">
+        <metrics statements="15" coveredstatements="15" conditionals="17" coveredconditionals="17" methods="1" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="4" count="10" type="stmt"/>
+        <line num="5" count="10" type="stmt"/>
+        <line num="6" count="10" type="stmt"/>
+        <line num="7" count="44" type="cond" truecount="5" falsecount="0"/>
+        <line num="8" count="18" type="stmt"/>
+        <line num="11" count="26" type="cond" truecount="2" falsecount="0"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="14" count="25" type="cond" truecount="2" falsecount="0"/>
+        <line num="15" count="9" type="stmt"/>
+        <line num="17" count="16" type="cond" truecount="8" falsecount="0"/>
+        <line num="18" count="2" type="stmt"/>
+        <line num="20" count="14" type="stmt"/>
+        <line num="23" count="7" type="stmt"/>
+        <line num="25" count="1" type="stmt"/>
       </file>
     </package>
     <package name="401-challenges.stack-queue-pseudo">
