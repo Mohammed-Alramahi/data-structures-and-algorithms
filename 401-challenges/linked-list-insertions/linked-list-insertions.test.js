@@ -1,5 +1,5 @@
 const LinkedList = require("./ll-insertions");
-describe("Linked List", () => {
+xdescribe("Linked List", () => {
   it("Creates an empty Linked List upon instantiation", () => {
     let list = new LinkedList();
     expect(list.head).toEqual(null);
