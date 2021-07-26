@@ -1,6 +1,6 @@
 const Stack = require("./stack");
 
-describe("STACK", () => {
+xdescribe("STACK", () => {
   let stack;
   beforeEach(() => {
     stack = new Stack();

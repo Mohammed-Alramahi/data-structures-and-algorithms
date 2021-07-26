@@ -23,6 +23,12 @@ describe('Binary Search Tree', () => {
 
     })
 
+    test('should return BFS.', () => {
+        let newTree = new BinarySearchTree();
+        let expected = [5, 2, 17, 9, 30];
+        expect(newTree.breadthFirst(tree)).toEqual(expected);
+
+    })
     test('should return null if the tree is empty.', () => {
         let newTree = new BinarySearchTree();
         expect(newTree.contains(33)).toBeNull();

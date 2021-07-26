@@ -1,5 +1,5 @@
 const Queue = require("./queue");
-describe("QUEUE", () => {
+xdescribe("QUEUE", () => {
     let queue;
     beforeEach(() => {
         queue = new Queue();

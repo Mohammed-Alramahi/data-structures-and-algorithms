@@ -1,5 +1,5 @@
 const LL = require("./ll-kth-from-end");
-describe("LINKED LIST KTH TEST", () => {
+xdescribe("LINKED LIST KTH TEST", () => {
   it("should throw an error when k is greater than length of linked list", () => {
     let list = new LL();
     list.append(1);

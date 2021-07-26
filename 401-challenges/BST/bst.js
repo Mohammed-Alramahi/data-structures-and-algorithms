@@ -52,6 +52,26 @@ class BST extends BinaryTree {
         }
         return false;
     }
+    breadthFirst(tree) {
+        let root = tree.root;
+        if (!root) {
+            return 'Tree is Empty';
+        }
+        let tmp = [];
+        let bfs = [];
+        tmp.push(root);
+        while (tmp.length > 0) {
+            let current = tmp[0];
+            if (current.left !== null) {
+                tmp.push(current.left);
+            }
+            if (current.right !== null) {
+                tmp.push(current.right);
+            }
+            bfs.push(tmp.shift().value);
+        }
+        return bfs;
+    }
 }
 
 module.exports = BST;
