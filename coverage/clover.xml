@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1627158155582" clover="3.2.0">
-  <project timestamp="1627158155582" name="All files">
-    <metrics statements="401" coveredstatements="357" conditionals="154" coveredconditionals="132" methods="80" coveredmethods="74" elements="635" coveredelements="563" complexity="0" loc="401" ncloc="401" packages="13" files="29" classes="29"/>
+<coverage generated="1627334138859" clover="3.2.0">
+  <project timestamp="1627334138859" name="All files">
+    <metrics statements="451" coveredstatements="381" conditionals="188" coveredconditionals="146" methods="92" coveredmethods="80" elements="731" coveredelements="607" complexity="0" loc="451" ncloc="451" packages="14" files="31" classes="31"/>
     <package name="401-challenges.BST">
-      <metrics statements="62" coveredstatements="60" conditionals="36" coveredconditionals="31" methods="11" coveredmethods="11"/>
+      <metrics statements="72" coveredstatements="69" conditionals="44" coveredconditionals="38" methods="13" coveredmethods="13"/>
       <file name="binary-tree.js" path="/home/meltdown/asac/data-structures-and-algorithms/401-challenges/BST/binary-tree.js">
-        <metrics statements="26" coveredstatements="26" conditionals="18" coveredconditionals="16" methods="7" coveredmethods="7"/>
+        <metrics statements="36" coveredstatements="35" conditionals="26" coveredconditionals="23" methods="9" coveredmethods="9"/>
         <line num="3" count="4" type="stmt"/>
         <line num="7" count="2" type="stmt"/>
         <line num="8" count="2" type="cond" truecount="1" falsecount="1"/>
@@ -31,7 +31,17 @@
         <line num="35" count="7" type="cond" truecount="2" falsecount="0"/>
         <line num="37" count="1" type="stmt"/>
         <line num="38" count="1" type="stmt"/>
-        <line num="42" count="2" type="stmt"/>
+        <line num="41" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="42" count="0" type="stmt"/>
+        <line num="44" count="1" type="stmt"/>
+        <line num="45" count="1" type="stmt"/>
+        <line num="46" count="7" type="cond" truecount="2" falsecount="0"/>
+        <line num="47" count="5" type="stmt"/>
+        <line num="49" count="7" type="cond" truecount="2" falsecount="0"/>
+        <line num="50" count="7" type="cond" truecount="2" falsecount="0"/>
+        <line num="53" count="1" type="stmt"/>
+        <line num="54" count="1" type="stmt"/>
+        <line num="58" count="2" type="stmt"/>
       </file>
       <file name="bst.js" path="/home/meltdown/asac/data-structures-and-algorithms/401-challenges/BST/bst.js">
         <metrics statements="32" coveredstatements="30" conditionals="18" coveredconditionals="15" methods="3" coveredmethods="3"/>
@@ -74,6 +84,55 @@
         <line num="4" count="14" type="stmt"/>
         <line num="5" count="14" type="stmt"/>
         <line num="8" count="3" type="stmt"/>
+      </file>
+    </package>
+    <package name="401-challenges.BT-max">
+      <metrics statements="40" coveredstatements="15" conditionals="26" coveredconditionals="7" methods="10" coveredmethods="4"/>
+      <file name="bt.js" path="/home/meltdown/asac/data-structures-and-algorithms/401-challenges/BT-max/bt.js">
+        <metrics statements="36" coveredstatements="11" conditionals="26" coveredconditionals="7" methods="9" coveredmethods="3"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+        <line num="8" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="9" count="0" type="stmt"/>
+        <line num="10" count="0" type="stmt"/>
+        <line num="11" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="12" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="14" count="0" type="stmt"/>
+        <line num="15" count="0" type="stmt"/>
+        <line num="18" count="0" type="stmt"/>
+        <line num="19" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="20" count="0" type="stmt"/>
+        <line num="21" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="22" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="23" count="0" type="stmt"/>
+        <line num="25" count="0" type="stmt"/>
+        <line num="26" count="0" type="stmt"/>
+        <line num="30" count="0" type="stmt"/>
+        <line num="31" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="32" count="0" type="stmt"/>
+        <line num="33" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="34" count="0" type="stmt"/>
+        <line num="35" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="37" count="0" type="stmt"/>
+        <line num="38" count="0" type="stmt"/>
+        <line num="41" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="42" count="0" type="stmt"/>
+        <line num="44" count="1" type="stmt"/>
+        <line num="45" count="1" type="stmt"/>
+        <line num="46" count="7" type="cond" truecount="2" falsecount="0"/>
+        <line num="47" count="5" type="stmt"/>
+        <line num="49" count="7" type="cond" truecount="2" falsecount="0"/>
+        <line num="50" count="7" type="cond" truecount="2" falsecount="0"/>
+        <line num="53" count="1" type="stmt"/>
+        <line num="54" count="1" type="stmt"/>
+        <line num="58" count="1" type="stmt"/>
+      </file>
+      <file name="node.js" path="/home/meltdown/asac/data-structures-and-algorithms/401-challenges/BT-max/node.js">
+        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="3" count="7" type="stmt"/>
+        <line num="4" count="7" type="stmt"/>
+        <line num="5" count="7" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
       </file>
     </package>
     <package name="401-challenges.array-shift">

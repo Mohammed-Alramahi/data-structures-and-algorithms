@@ -9,7 +9,7 @@ describe('Nodes functionality', () => {
     })
 
     test('should create a node with the right values', () => {
-        const something = 'someThing'
+        const something = 'someThing';
         const newNode = new Node(something);
 
         expect(newNode.value).toEqual(something);
@@ -17,4 +17,5 @@ describe('Nodes functionality', () => {
         expect(newNode.left).toBeNull();
 
     })
+
 })

@@ -4,7 +4,6 @@ const BT = require('./binary-tree');
 
 describe('Binary tree test', () => {
     let tree;
-
     beforeAll(() => {
         const one = new Node(1);
         const two = new Node(2);
@@ -23,7 +22,9 @@ describe('Binary tree test', () => {
 
         tree = new BT(one);
     })
-
+    it('should retrieve the max value inside a tree', () => {
+        expect(tree.getMax()).toEqual(7);
+    })
     it('should give the right values for pre-order', () => {
         let expected = [1, 2, 4, 5, 7, 3, 6];
         expect(tree.preOrder()).toEqual(expected);
@@ -39,7 +40,7 @@ describe('Binary tree test', () => {
         expect(tree.postOrder()).toEqual(expected);
     })
 
-    test('should give error if the tree is empty', () => {
+    it('should give error if the tree is empty', () => {
         tree = new BT();
         expect(() => {
             tree.postOrder();
