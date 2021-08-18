@@ -24,14 +24,11 @@ class LinkedList {
       return false;
     }
     let current = this.head;
-    while (current.next) {
+    while (current) {
       if (current.value == value) {
         return true;
       }
       current = current.next;
-    }
-    if (current.value == value) {
-      return true;
     }
     return false;
   }

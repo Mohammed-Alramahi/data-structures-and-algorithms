@@ -75,6 +75,7 @@ class LinkedList {
 
     return this;
   }
+
 }
 
 module.exports = LinkedList;
