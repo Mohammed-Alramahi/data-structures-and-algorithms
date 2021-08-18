@@ -26,14 +26,17 @@ class LinkedList {
     }
   }
   toString() {
+    if (!this.head) {
+      return "Empty!";
+    }
+    let strRepr = "";
     let current = this.head;
-    let str = "";
     while (current.next) {
-      str += `{${current.value}}=>`;
+      strRepr += `{ ${current.value} } -> `;
       current = current.next;
     }
-    str += `{${current.value}}=>Null`;
-    return str;
+    strRepr += `{ ${current.value} } -> NULL`;
+    return strRepr;
   }
   kthFromEnd(k) {
     let current = this.head;
@@ -49,6 +52,62 @@ class LinkedList {
       }
       return current.value;
     }
+  }
+  delKFromEnd(k) {
+    let current = this.head;
+    let tmp = this.head;
+    for (let i = 1; i < this.size - k; i++) {
+      current = current.next;
+    }
+    console.log(current.value);
+    while (tmp.next) {
+      if (tmp.next.value == current.value) {
+        tmp.next = tmp.next.next;
+      }
+      else {
+        tmp = tmp.next;
+      }
+
+    }
+  }
+  reverse() {
+    let current = this.head;
+    let prev = null;
+    let next = null;
+    while (current) {
+      next = current.next;
+      current.next = prev;
+      prev = current;
+      current = next;
+    }
+    return prev;
+  }
+  isSorted() {
+    let current = this.head;
+    let asc = false;
+    let des = false;
+    while (current.next) {
+      if (current.value < current.next.value) {
+        asc = true;
+        current = current.next;
+      }
+      else {
+        asc = false;
+        break;
+      }
+    }
+    current = this.head;
+    while (current.next) {
+      if (current.value > current.next.value) {
+        des = true;
+        current = current.next;
+      }
+      else {
+        des = false;
+        break;
+      }
+    }
+    return asc || des || false;
   }
 }
 module.exports = LinkedList;
