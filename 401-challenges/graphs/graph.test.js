@@ -25,8 +25,6 @@ graph.addDirectedEdge(d, b);
 graph.addDirectedEdge(d, e);
 graph.addDirectedEdge(d, f);
 
-console.log("adjacency list: ", graph.adjacencyList);
-
 describe("Tests graph functionality", () => {
     test("Nodes can be added to the graph", () => {
         const i = graph.addVertex("I");
@@ -37,12 +35,9 @@ describe("Tests graph functionality", () => {
     test("An edge can be added to the graph", () => {
         const j = graph.addVertex("J");
         const k = graph.addVertex("K");
-
         graph.addDirectedEdge(d, j);
         graph.addDirectedEdge(j, k);
-
         graph.breadthFirst(j);
-
         expect(graph.breadthFirst(j).has(k)).toEqual(true);
     });
 });
